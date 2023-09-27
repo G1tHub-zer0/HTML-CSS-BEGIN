@@ -1,137 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML</title>
-    <link rel="icon" type="image/x-icon" href="/image/favicon.ico">
-    <style>
-        h1{
-            color: red;
-        }
-        p{
-            font-size: large;
-            color: rgb(15, 5, 5);
-        }
-        body{
-            background-image: url("/image/download.jpg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-        }
-        button{
-            color: blue;
-            background-color: white;
-        }
-        table, th, td{
-            border: 2px solid;
-            border-radius: 10px ;
-        }  
-        table{
-            border-spacing: 15px;
-        } 
-        th, td{
-            background-color:rgb(215, 193, 193);
-            border-color:blue;
-            padding: 15px;
-        }
-        th{
-            text-align: center;
-            width: 150px;
-        }
-        td{
-            text-align: center;
-            height: 100%;
-        }
-        tr :hover{background-color: black;}
-        .city{
-            border: 1px solid blue;
-            background-color: red;
-            font-size: 2px;
-            border-radius: 10px;
-        }
-        .main{
-            text-align: center;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <h1 style="text-align: center;"> Đây là trang web của tôi</h1>
-    <hr>
-    <p>Nhấn vào nút dưới đây để vào trang <strong><a href="https://www.facebook.com/khangzero0605/" style="color: black;">facebook</a></strong> của tôi</p>
-    <button>
-        <a href="https://www.youtube.com/" target="_blank">Nhấn vào đây để vào youtube</a>
-    </button>
-    <table align="center">
-        <caption style="font-size: 50px; color: white;">Bảng</caption>
-        <tr>
-            <th>Họ và tên</th>
-            <th>Giới tính</th>
-        </tr>
-        <tr>
-            <td>Nguyễn Quốc Khang</td>
-            <td>Nam</td>
-        </tr>
-        <tr>
-            <td>Nguyễn Thảo Khánh</td>
-            <td>Nữ</td>
-        </tr>
-    </table>
-    <ul style="list-style-type: circle;"><!--Thêm list(đánh dấu đầu dòng)-->
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Milk</li>
-    </ul>
-    <ol type="I"><!--Thêm list(đánh số đầu dòng)-->
-        <li>Coffee</li>
-        <ol start="10">
-            <li>Black</li>
-            <li>Milk Coffe</li>
-        </ol>
-        <li>Tea</li>
-        <li>Milk</li>
-    </ol>
-    <a href="#C1">Jump to C1</a>
-    <dl><!--description list-->
-        <dt>Coffee</dt>
-        <dd>- black hot drink</dd>
-        <dt>Milk</dt>
-        <dd>- white cold drink</dd>
-    </dl>
-    <div style="background-color: black;">
-        <p style="color: white;">Hello</p>
-        <p style="color: red;">Friend</p>
+    <div class="tour">
+        <div class="tour-top">
+            <img src="./image/img1.jpg" alt="Bali" class="'tour-image">
+            <span class="tour-price">From $40</span>
+        </div>
+        <div class="tour-content">
+            <h3 class="tour-title">Bali</h3>
+            <div class="tour-rating">
+                <div class="tour-review">
+                    <div class="tour-star">
+                        <img src="./image/star.png" alt="star" style="width: 20px;">
+                    </div>
+                        <div class="tour-review-count">
+                        <span>4.8 (12 reviews)</span>
+                    </div>
+                </div>
+                <div class="tour-duration">Duration: 9 hours</div>
+            </div>
+            <a href="http://facebook.com/" target="_blank" rel="noopener noreferrer" class="tour-button">
+                Tour price $61
+            </a>
+        </div>
     </div>
-    <p>This is my <span style="border: 1px solid red;">friend</span></p>
-    <div class="city">
-        <p>London</p>
-    </div>
-    <div class="city main">
-        <p>Paris</p>
-    </div>
-    <p id="C1">This is C1</p>
-    <iframe src="https://www.youtube.com/embed"  allowfullscreen name="youtube" style="border: none; background-color: blue; height: 600px; width: 600px;"
-    title="Youtube">
-    </iframe>
-    <p><a href="https://www.youtube.com/embed"  target="youtube">Youtube</a></p>
-    <script>
-        function light(sw) {
-          var pic;
-          if (sw == 0) {
-            pic = "/image/lightoff.png"
-          } else {
-            pic = "/image/lighton.png"
-          }
-          document.getElementById('myImage').src = pic;
-        }
-        </script>
-        
-        <img id="myImage" src="/image/lightoff.png" width="100" height="180">
-        
-        <p>
-        <button type="button" onclick="light(1)">Light On</button>
-        <button type="button" onclick="light(0)">Light Off</button>
-        </p>
-        
-      
 </body>
 </html>
