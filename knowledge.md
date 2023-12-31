@@ -62,7 +62,7 @@
 - `inline-block` : Biến thành thẻ inline-block,
   là sự kết hợp giữa inline và block, khi các thẻ có thuộc tính inline-block nó sẽ kế thừa đặc tính của inline tức là nằm cạnh nhau thì sẽ nằm trên 1 hàng, có độ rộng bằng nội dung mà nó chứa, không bị hạn chế CSS
 - `none`: Ẩn luôn, ko thấy ko nhấn được
-- `flex`: Dùng rất nhiều hiện nay, nếu master được nó thì code layout vô tư :D
+- `flex`: Dùng rất nhi ều hiện nay, nếu master được nó thì code layout vô tư :D
 - _min-width_: Độ rộng tối thiểu, ví dụ 100px -> >= 100px
 - _max-width_: Độ rộng tối đa, ví dụ 100px -> <= 100px
 - _flexbox_: Áp dụng thuộc tính display: flex vào phần tử mình muốn dàn layout
