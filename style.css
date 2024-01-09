@@ -8,6 +8,7 @@
     --primary-color: #3B71FE;
     --gray2: #353945;
     --gray3: #777E90;
+    --gray4: #B1B5C3;
     --gray4f: #4F4F4F;
     --gray5: #E6E8EC;
     --gray6: #F4F5F6;
@@ -33,6 +34,15 @@ a {
 }
 ul, ol {
     list-style-type: none;
+}
+input, button, select, textarea {
+    outline: none;
+    font: inherit;
+    background-color: transparent;
+    border: none;
+}
+button {
+    cursor: pointer;
 }
 .container {
     width: 100%;
@@ -275,22 +285,76 @@ ul, ol {
 .footer .container {
     max-width: 1130px;
 }
+.footer-top {
+    padding-bottom: 70px;
+    border-bottom: 1px solid var(--gray5);
+}
 .footer-columns {
+    height: 232px;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+}
+.footer-bot {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-copyright {
+    color: var(--gray4);
+    line-height: 20px;
+}
+.footer-sn {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+.footer-sn-item {
+    width: 24px;
+    height: 24px;
 }
 .footer-column:first-child {
     max-width: 270px;
 }
 .footer-logo {
     display: inline-block;
-    margin-bottom: 40px;
 }
 .footer-description {
+    margin-top: 40px;
+    margin-bottom: 30px;
     color: var(--gray2);
     font-size: 16px;
     line-height: 1.5;
+}
+.subcribe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 24px;
+    border: 2px solid var(--gray5);
+    padding: 8px 8px 8px 26px;
+}
+.subcribe-email {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--black-color);
+    width: 100%;
+    padding-right: 18px;
+}
+.subcribe-email::-webkit-input-placeholder {
+    color: var(--gray4);
+}
+.subcribe-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33px;
+    height: 33px;
+    border-radius: 30px;
+    background-color: var(--primary-color);
+    flex-shrink: 0;
 }
 .footer-heading {
     color: var(--gray2);
@@ -302,9 +366,6 @@ ul, ol {
     display: flex;
     flex-direction: column;
     gap: 14px;
-}
-.footer-item {
-
 }
 .footer-link {
     display: block;
